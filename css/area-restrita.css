@@ -1,0 +1,107 @@
+body{
+	background-color: #EC803B;
+}
+
+/*area-restrita.html*/
+.main{
+	display: flex;
+	width: calc(100% - 280px);
+	flex-direction: column;
+	height: 100%;
+}
+
+.banner{
+	min-height: 350px;
+	float: right;
+    width: 100%;
+	background: lightgray;
+	display: flex;
+}
+	.banner .titulo{
+		color: #EC803B;
+		font-size: 3em;
+		padding: 70px 10px;
+	}
+
+.aside{
+	min-height: 100%;
+	width: 280px;
+	background-color: #151515;
+	position: relative;
+}
+	.aside ul{
+		list-style: none;
+		margin: auto;
+		padding: 0;
+	}
+		.aside a{
+			display: block;
+			padding: 25.5px 10px;
+			color: white;
+			text-decoration: none;
+		}
+		.aside a:hover{
+			background-color: #EC803B;
+			color: #F2F2F2;
+		}
+
+.conta{
+	min-height: 400px;
+	float: left;
+	background: #F2F2F2;
+	padding: 20px;
+}
+
+	.conta input, .infocontato input, .infocontato textarea{
+		width: 770px;
+	}
+
+.infoplano{
+	min-height: 150px;
+	float: left;
+	background: #F2F2F2;
+	padding: 20px;
+}
+
+.infocontato{
+	min-height: 500px;
+	float: left;
+	background: #F2F2F2;
+	padding: 20px;
+}
+
+/*smartphone*/
+@media screen and (min-width: 100px) and (max-width: 500px){
+	body {background-color: #FFF;}
+	.container-2{ margin: 0 auto; }
+	.main{ width: 100%; }
+	.banner { background-color: #EC803B; }
+		.banner .titulo{ color: #f2f2f2;}
+	.aside{ display: none; }
+	.conta{
+		max-width: 100%;
+		padding: 0px;
+	}
+		.infocontato, .conta{
+			text-align: center
+		}
+		.conta .titulo h1 { border-bottom: 2px solid #EC803B;}
+		.conta input, .infocontato input, .infocontato textarea{ width: 200px;}
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px){
+	body {background-color: #FFF;}
+	.container-2{ margin: 0 auto; }
+	.main{ width: 100%; }
+	.banner { background-color: #EC803B; }
+		.banner .titulo{ color: #f2f2f2;}
+	.aside{ display: none; }
+	.conta, .infoplano, .infocontato{
+		margin: 0 auto;
+		background-color: #FFF;
+	}
+	.conta .titulo h1, .infocontato .titulo h1, .infoplano .titulo h1 { border-bottom: 2px solid #EC803B;}
+	.conta input, .infocontato input, .infocontato textarea{ max-width: 600px; }
+
+}	
+
